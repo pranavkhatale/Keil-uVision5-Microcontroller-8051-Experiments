@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_2_B                                                       01/20/2021 20:02:06 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 2-b.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 2-b.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 2-b.lst
+                      ) OBJECT(.\Objects\Experiment 2-b.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+0000                   3     ORG 0000H           
+0000 780A              4     MOV R0, #0AH        
+0002 7981              5     MOV R1, #81H        
+0004 7A82              6     MOV R2, #82H        
+0006 7B00              7     MOV R3, #00H        
+0008 8983              8     LOOP: MOV DPH, R1   
+000A 8B82              9     MOV DPL, R3         
+000C E0               10     MOVX A, @DPTR       
+000D 8A83             11     MOV DPH, R2         
+000F F0               12     MOVX@DPTR, A        
+0010 0B               13     INC R3              
+0011 D8F5             14     DJNZ R0, LOOP       
+                      15     END                 
+A51 MACRO ASSEMBLER  EXPERIMENT_2_B                                                       01/20/2021 20:02:06 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+LOOP . . . . . . .  C ADDR   0008H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
