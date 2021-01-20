@@ -1,4 +1,4 @@
-2-a: Transfer block of data from 8100H memory loaction to 8200H memory location externally
+2-b: Transfer block of data from 8100H memory loaction to 8200H memory location externally
 
 | Before Execution | | | | | | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
