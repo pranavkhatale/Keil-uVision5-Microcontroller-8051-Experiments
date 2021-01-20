@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_1                                                         01/20/2021 19:23:18 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 1.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 1.lst) OB
+                      JECT(.\Objects\Experiment 1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H                 
+0000 7902              5     MOV R1, #02H              
+0002 7405              6     MOV A, #05H               
+0004 29                7     ADD A, R1                 
+0005 FA                8     MOV R2, A                 
+                       9     
+0006 7902             10     MOV R1, #02H              
+0008 7405             11     MOV A, #05H               
+000A 99               12     SUBB A, R1                
+000B FB               13     MOV R3, A                 
+                      14     
+000C 7405             15     MOV A, #05H               
+000E 75F002           16     MOV B, #02H               
+0011 A4               17     MUL AB                    
+0012 FC               18     MOV R4, A                 
+                      19     
+0013 7405             20     MOV A, #05H               
+0015 75F002           21     MOV B, #02H               
+0018 84               22     DIV AB                    
+0019 FD               23     MOV R5, A                 
+001A AEF0             24     MOV R6, B                 
+                      25     END                       
+A51 MACRO ASSEMBLER  EXPERIMENT_1                                                         01/20/2021 19:23:18 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
