@@ -2,12 +2,7 @@ Arithematic Operations: Addition, Substraction, Multiplication, Division of two 
 
 Result :
 
-|---|---|
 | Addition | R2=07H |
-|---|---|
 | Substraction | R3=03H |
-|---|---|
 | Multiplication | R4=0AH |
-|---|---|
 | Division | R5=02, Remaider=01H |
-|---|---|
