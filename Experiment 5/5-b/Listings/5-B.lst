@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  5_B                                                                  01/21/2021 21:38:51 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\5-B.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 5-B.asm SET(SMALL) DEBUG PRINT(.\Listings\5-B.lst) OBJECT(.\Objects\5-B
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H             
+0000 905000            5     MOV DPTR, #5000H      
+0003 7A09              6     MOV R2, #09H          
+0005 E0                7     MOVX A, @DPTR         
+0006 F560              8     MOV 60H, A            
+0008 A3                9     LP2: INC DPTR         
+0009 E0               10     MOVX A, @DPTR         
+000A B56002           11     CJNE A, 60H, LP1      
+000D 8004             12     SJMP NEXT
+000F 4002             13     LP1: JC NEXT          
+0011 F560             14     MOV 60H, A            
+0013 DAF3             15     NEXT: DJNZ R2, LP2    
+                      16     END                   
+A51 MACRO ASSEMBLER  5_B                                                                  01/21/2021 21:38:51 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LP1. . . . . . . .  C ADDR   000FH   A   
+LP2. . . . . . . .  C ADDR   0008H   A   
+NEXT . . . . . . .  C ADDR   0013H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
