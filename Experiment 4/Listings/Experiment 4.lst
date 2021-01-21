@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_4                                                         01/21/2021 21:00:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 4.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 4.lst) OB
+                      JECT(.\Objects\Experiment 4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H        
+0000 7445              5     MOV A, #45H      
+0002 7867              6     MOV R0, #67H     
+0004 58                7     ANL A, R0        
+0005 F520              8     MOV 20H, A       
+0007 7445              9     MOV A, #45H      
+0009 48               10     ORL A, R0        
+000A F521             11     MOV 21H, A       
+000C 7445             12     MOV A, #45H      
+000E 68               13     XRL A, R0        
+000F F522             14     MOV 22H, A       
+0011 7445             15     MOV A, #45H      
+0013 F4               16     CPL A            
+0014 F523             17     MOV 23H, A       
+                      18     END              
+A51 MACRO ASSEMBLER  EXPERIMENT_4                                                         01/21/2021 21:00:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
