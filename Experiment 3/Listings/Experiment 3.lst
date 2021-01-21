@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_3                                                         01/21/2021 20:24:57 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 3.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 3.lst) OB
+                      JECT(.\Objects\Experiment 3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H           
+0000 7B0A              5     MOV R3, #0AH        
+0002 7820              6     MOV R0, #20H        
+0004 7930              7     MOV R1, #30H        
+0006 E6                8     LOOP: MOV A, @R0    
+0007 C7                9     XCH A, @R1          
+0008 F6               10     MOV @R0, A          
+0009 08               11     INC R0              
+000A 09               12     INC R1              
+000B DBF9             13     DJNZ R3, LOOP       
+                      14     END                 
+A51 MACRO ASSEMBLER  EXPERIMENT_3                                                         01/21/2021 20:24:57 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
