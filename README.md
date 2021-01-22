@@ -6,3 +6,4 @@ Keil uVision5 Experiments
 3. Exchange the 10 byte of data between 20H memory location and 30H memory location
 4. Logical operations : AND, OR, XOR & NOT of 45H and 67H, store the result from 20H
 5. Find the smallest & largest number in a given array starting from 5000H memory location and stored the result in 60H memory location
+6. Sort a given array in Ascendng & Descending order
