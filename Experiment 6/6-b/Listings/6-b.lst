@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  6_B                                                                  01/22/2021 22:39:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\6-b.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 6-b.asm SET(SMALL) DEBUG PRINT(.\Listings\6-b.lst) OBJECT(.\Objects\6-b
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H              
+0000 7C04              5     MOV R4, #04H           
+0002 7B04              6     LOOP2: MOV R3, #04H    
+0004 7820              7     MOV R0, #20H           
+0006 C3                8     CLR C                  
+0007 E6                9     LOOP1: MOV A, @R0      
+0008 F9               10     MOV R1, A              
+0009 08               11     INC R0                 
+000A E6               12     MOV A, @R0             
+000B 99               13     SUBB A, R1             
+000C 4006             14     JC SKIP                
+000E E6               15     MOV A, @R0             
+000F 18               16     DEC R0                 
+0010 F6               17     MOV @R0, A             
+0011 E9               18     MOV A, R1              
+0012 08               19     INC R0                 
+0013 F6               20     MOV @R0, A             
+0014 DBF1             21     SKIP: DJNZ R3, LOOP1   
+0016 DCEA             22     DJNZ R4, LOOP2         
+                      23     END                    
+A51 MACRO ASSEMBLER  6_B                                                                  01/22/2021 22:39:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP1. . . . . . .  C ADDR   0007H   A   
+LOOP2. . . . . . .  C ADDR   0002H   A   
+SKIP . . . . . . .  C ADDR   0014H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
