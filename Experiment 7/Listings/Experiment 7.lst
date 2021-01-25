@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_7                                                         01/24/2021 20:42:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 7.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 7.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 7.lst) OB
+                      JECT(.\Objects\Experiment 7.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG 0000H            
+0000 9000FA            5     MOV DPTR, #MYDATA    
+0003 7840              6     MOV R0, #40H         
+0005 7A05              7     MOV R2, #05H         
+0007 E4                8     BACK: CLR A           
+0008 93                9     MOVC A, @A+DPTR      
+0009 F6               10     MOV @R0, A           
+000A A3               11     INC DPTR             
+000B 08               12     INC R0               
+000C DAF9             13     DJNZ R2, BACK        
+000E 80FE             14     HERE: SJMP HERE
+00FA                  15     ORG 250              
+00FA 494E4449         16     MYDATA: DB"INDIA"
+00FE 41                      
+                      17     END                  
+A51 MACRO ASSEMBLER  EXPERIMENT_7                                                         01/24/2021 20:42:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BACK . . . . . . .  C ADDR   0007H   A   
+HERE . . . . . . .  C ADDR   000EH   A   
+MYDATA . . . . . .  C ADDR   00FAH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
