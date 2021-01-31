@@ -8,4 +8,5 @@ Keil uVision5 Experiments
 5. Find the smallest & largest number in a given array starting from 5000H memory location and stored the result in 60H memory location
 6. Sort a given array in Ascendng & Descending order
 7. Display "INDIA" in ROM space strating at 250H also transfer the bytes into RAM location starting at 40H
-8. Generate a square wave of 50% duty cycle on the P1.5
+8. Generate a square wave of 50% duty cycle on the P1
+9. Generate a triangular wave
