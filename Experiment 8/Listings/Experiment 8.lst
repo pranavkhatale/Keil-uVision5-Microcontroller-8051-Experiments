@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_8                                                         01/31/2021 14:08:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 8.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 8.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 8.lst) OB
+                      JECT(.\Objects\Experiment 8.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+0000                   2     org 0000h
+0000 758901            3     mov tmod,#01h
+0003 758AEA            4     here: mov tl0,#0eah
+0006 758CFF            5     mov th0,#0ffh
+0009 B295              6     cpl p1.5
+000B 110F              7     acall delay
+000D 80F4              8     sjmp here
+000F D28C              9     delay: setb TR0
+0011 308DFD           10     again: jnb tf0,again
+0014 C28C             11     clr TR0
+0016 C28D             12     clr tf0
+0018 22               13     ret
+                      14     end
+A51 MACRO ASSEMBLER  EXPERIMENT_8                                                         01/31/2021 14:08:52 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0011H   A   
+DELAY. . . . . . .  C ADDR   000FH   A   
+HERE . . . . . . .  C ADDR   0003H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
