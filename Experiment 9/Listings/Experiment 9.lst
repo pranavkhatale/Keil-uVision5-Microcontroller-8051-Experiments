@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  EXPERIMENT_9                                                         01/31/2021 14:29:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Experiment 9.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Experiment 9.asm SET(SMALL) DEBUG PRINT(.\Listings\Experiment 9.lst) OB
+                      JECT(.\Objects\Experiment 9.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+0000                   2     org 0000h
+0000 759000            3     mov p1, #00h
+0003 7400              4     again: mov a, #00h
+0005 F590              5     RAISE: mov p1, a
+0007 04                6     inc a
+0008 B4FFFA            7     cjne a, #0ffh, RAISE
+000B 74FF              8     mov a, #0ffh
+000D F590              9     FALL: mov p1, a
+000F 14               10     dec A
+0010 B400FA           11     cjne a, #00h, FALL
+0013 80EE             12     jmp again
+                      13     end
+A51 MACRO ASSEMBLER  EXPERIMENT_9                                                         01/31/2021 14:29:32 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0003H   A   
+FALL . . . . . . .  C ADDR   000DH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+RAISE. . . . . . .  C ADDR   0005H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
